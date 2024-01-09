@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, a, label, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding-top: 101px;
+}
+
+/********** HEADER Y FOOTER **********/
+
+header nav {
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.navbar {
+    transition: top 0.5s;
+}
+
+header .btn, footer .btn,
+header .btn:active, footer .btn:active,
+header .btn:hover, footer.btn:hover,
+header .btn:focus, footer.btn:focus,
+header .btn:disabled, footer.btn:disabled {
+    background: linear-gradient(90deg, rgba(0,186,195,1) 0%, rgba(133,196,65,1) 35%, rgba(114,71,156,1) 100%);
+    border: 1px solid black !important;
+    border-radius: 10px !important;
+    color: #231f20 !important;
+}
+
+.navbar-collapse {
+    transition: height 1s ease;
+}
+
+header span {
+    height: 2.5em !important;
+    width: 2.5em !important;
+}
+
+footer {
+    background-color: #231f20;
+}
+
+.bg-verde {
+    background-color: #85c441;
+}
+.bg-marron {
+    background-color: #231f20 !important;
+    border-color: black !important;
+    color: white !important;
+}
+
+.navbar-nav > *, .text-decoration-none {
+    transition: 1s;
+}
+.navbar-nav > *:hover, .text-decoration-none:hover {
+    background-color: #85c441;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+input:focus, textarea:focus {
+    border-color: #78529f !important;
+    box-shadow: 0 0 0 0.2rem #78529f !important;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+}
+
+/********** INDEX **********/
+
+video {
+    width: 100%;
+    max-height: calc(100vh - 101px);
+}
+
+#miAcordeon2 [type="button"]:focus, #miAcordeon2 button[type="button"]:active, #miAcordeon2 button[type="button"] {
+    border: none;
+    background-color: transparent;
+} /* botones de la sección "testimonios" */
+
+#miAcordeon1 .collapsing, #miAcordeon2 .collapsing {
+    -webkit-transition: all 0.5s ease !important;
+    -moz-transition: all 0.5s ease !important;
+    -o-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+}
+
+.scroll-animate {
+    transform: translateY(100px);
+    transition: transform 1s;
+}
+.scroll-animate.show {
+    transform: translateY(0);
+}
+
+/********** BLOG **********/
+
+.row { /* Desborde de cards */
+    --bs-gutter-x: 0;
+}
+
+/********** NUESTRO EQUIPO **********/
+
+.background-image {
+    background-image: url("../assets/nuestro-equipo/equipo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.accordion-button:focus,
+.accordion-button:active,
+.accordion-button:not(:focus):not(.collapsed),
+.accordion-button.collapsed {
+    border-color: unset;
+    box-shadow: none;
+    color: black;
+}
+
+.accordion-button:focus::after,
+.accordion-button:active::after,
+.accordion-button:not(:focus):not(.collapsed)::after,
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-flush .accordion-item button {
+    background-color: white;
+    transition: 1s ease-in-out;
+}
+
+.accordion-flush .accordion-item button:hover,
+.accordion-button:not(:focus):not(.collapsed),
+.accordion-button:focus:not(.collapsed) {
+    background-color: #85c441;
+    box-shadow: inset 0 -20px 10px -5px rgba(0,0,0,0.4);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .flex-responsive > *, section[class="bg-verde container pt-5 pb-5 gap-5 d-md-flex flex-md-row-reverse"] > * {
+        flex: 1;
+    }/* section del html contacto */
+
+    .responsive-grid1, .card-blog-responsive, .card-sobre-nosotros4-responsive {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-sobre-nosotros-responsive {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .col-xl-2-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }/* section del html sobre-nosotros */
+
+    .card-blog-responsive, .card-sobre-nosotros4-responsive {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
