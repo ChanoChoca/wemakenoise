@@ -158,9 +158,9 @@ video {
 
 @media only screen and (min-width: 768px) {
 
-    .flex-responsive > *, section[class="bg-verde container pt-5 pb-5 gap-5 d-md-flex flex-md-row-reverse"] > * {
+    .flex-1 > * {
         flex: 1;
-    }/* section del html contacto */
+    }
 
     .responsive-grid1, .card-blog-responsive, .card-sobre-nosotros4-responsive {
         grid-template-columns: 1fr 1fr;
