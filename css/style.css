@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
 
-h1, h2, h3, h4, h5, h6, p, a, label, button {
+body {
+  padding-top: 101px; /* Para que el header no ocupe espacio del contenido que le sigue */
   font-family: 'Montserrat', sans-serif;
 }
-
-body {
-  padding-top: 101px;
-} /* Para que el header no ocupe espacio del contenido que le sigue */
 
 header nav {
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3) !important;
