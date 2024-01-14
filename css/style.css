@@ -86,17 +86,21 @@ video {
     transition: all 0.5s ease !important;
 } /* Efecto transición en index */
 
+.glide__slides {
+    height: 200px;
+} /* Carrusel de sobre-nosotros */
+
+.glide__slide img {
+    width: 100%;
+    height: 100%;
+}
+
 .background-image-index {
     background-image: linear-gradient(rgba(0, 0, 255, 0), #231f20), url("../assets/index/principios-basicos.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: #ffffff;
-}
-
-.carousel-item img {
-    height: 150px;
-    object-fit: contain;
 }
 
 .background-image-nuestro-equipo {

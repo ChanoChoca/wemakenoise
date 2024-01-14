@@ -39,14 +39,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+//movimiento vertical de contenedores
 window.addEventListener('scroll', function() {
     const elements = document.getElementsByClassName('scroll-animate');
     Array.from(elements).forEach(function(element) {
         const position = element.getBoundingClientRect();
 
-        // checking whether fully visible
         if(position.top >= 0 && position.bottom <= window.innerHeight) {
             element.classList.add('show');
         }
     });
+});
+
+//carrusel
+document.addEventListener('DOMContentLoaded', function () {
+    const glide = new Glide('.glide', {
+        type: 'carousel',
+        perView: 5,
+        rewind: true,
+        autoplay: 2000,
+        hoverpause: false,
+        breakpoints: {
+            768: {
+                perView: 2
+            },
+            992: {
+                perView: 3
+            },
+            1200: {
+                perView: 4
+            }
+        }
+    });
+    glide.mount();
 });
