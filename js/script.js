@@ -52,24 +52,40 @@ window.addEventListener('scroll', function() {
 });
 
 //carrusel
-document.addEventListener('DOMContentLoaded', function () {
-    const glide = new Glide('.glide', {
-        type: 'carousel',
-        perView: 5,
-        rewind: true,
-        autoplay: 2000,
-        hoverpause: false,
-        breakpoints: {
-            768: {
-                perView: 2
+$(document).ready(function(){
+    $('.slick-carousel').slick({
+        prevArrow: false,
+        nextArrow: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        pauseOnDotsHover: false,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
             },
-            992: {
-                perView: 3
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
             },
-            1200: {
-                perView: 4
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
             }
-        }
+        ]
     });
-    glide.mount();
 });
