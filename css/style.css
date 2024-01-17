@@ -125,6 +125,10 @@ header .navbar-nav > *:hover, header .text-decoration-none:hover, footer .navbar
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.slick-carousel {
+  background-color: #F8F8F8;
+}
+
 video {
   max-height: calc(100vh - 101px);
 }

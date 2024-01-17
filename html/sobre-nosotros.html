@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/slick.js"></script>
 </head>
 <body>
 <header>
@@ -38,7 +39,7 @@
     <a href="https://api.whatsapp.com/send/?phone=5492364533342" target="_blank"><img src="../assets/header-y-footer/whatsapp.svg" class="position-fixed z-3" width="64" height="64" id="whatsapp" alt></a>
 
     <section class="pb-5">
-        <div class="slick-carousel w-100" style="background-color: #F8F8F8">
+        <div class="slick-carousel w-100">
             <div class="ratio ratio-1x1"><img src="../assets/sobre-nosotros/carrusel1.svg" alt class="ps-5 pe-5 w-100"></div>
             <div class="ratio ratio-1x1"><img src="../assets/sobre-nosotros/carrusel2.svg" alt class="ps-5 pe-5 w-100"></div>
             <div class="ratio ratio-1x1"><img src="../assets/sobre-nosotros/carrusel3.svg" alt class="ps-5 pe-5 w-100"></div>
@@ -52,7 +53,7 @@
         </div>
     </section>
 
-    <section class="pt-5 pb-5 container d-flex flex-column column-gap-5 flex-md-row flex-1">
+    <section class="pt-5 pb-5 container d-flex flex-column column-gap-md-5 row-gap-3 flex-md-row flex-1">
         <h2>La mayoría de los líderes de marketing luchan por encontrar una agencia asociada estratégica y proactiva con la experiencia, los servicios y la visión para generar resultados en línea a largo plazo.</h2>
 
         <p class="fs-6">Hemos creado un entorno en el que los empleados y clientes tienen la posibilidad de aprender, crecer y ganar. <br> <br>
@@ -61,13 +62,13 @@
 
     <section class="container text-center pt-5 pb-5">
         <h2>We Make Noise diferencia</h2>
-        <div class="d-grid gap-5 card-sobre-nosotros-responsive">
+        <div class="d-grid mt-5 gap-5 card-sobre-nosotros-responsive">
             <div>
                 <div class="ratio ratio-1x1">
                     <img src="../assets/sobre-nosotros/cliente.jpg" class="rounded-circle" alt>
                 </div>
                 <div>
-                    <h5 class="card-title">Cliente</h5>
+                    <h3 class="card-title pt-4 pb-2">Cliente</h3>
                     <p class="card-text">"No sé cómo reemplazaría el valor que recibo de mi equipo WeMakeNoise".</p>
                 </div>
             </div>
@@ -77,7 +78,7 @@
                     <img src="../assets/sobre-nosotros/empleado.jpg" class="rounded-circle" alt>
                 </div>
                 <div>
-                    <h5 class="card-title">Empleado</h5>
+                    <h3 class="card-title pt-4 pb-2">Empleado</h3>
                     <p class="card-text">"Me siento valorado, comprometido y orgulloso del crecimiento que estoy experimentando en WeMakeNoise".</p>
                 </div>
             </div>
@@ -87,7 +88,7 @@
                     <img src="../assets/sobre-nosotros/compañia.jpg" class="rounded-circle" alt>
                 </div>
                 <div>
-                    <h5 class="card-title">Compañía</h5>
+                    <h3 class="card-title pt-4 pb-2">Compañía</h3>
                     <p class="card-text">"Estamos orgullosos del impacto que creamos para nuestros clientes y empleados y estamos creciendo de manera sostenible".</p>
                 </div>
             </div>
@@ -102,8 +103,8 @@
         <div class="card border-0 card-sobre-nosotros2-responsive flex-md-row">
             <img src="../assets/sobre-nosotros/equipo.jpg" alt class="col-12 col-md-5" style="aspect-ratio: 1/1">
             <div class="card-body">
-                <h5 class="card-title">Conozca a nuestro equipo</h5>
-                <div class="border-bottom border-5 w-25"></div>
+                <h2 class="card-title">Conozca a nuestro equipo</h2>
+                <div class="border-bottom border-5 w-25 mt-3 mb-3"></div>
                 <p class="card-text">Nuestro equipo altamente efectivo está comprometido a brindar resultados consistentes para la misión de su marca a través de estrategias de vanguardia.</p>
                 <a href="nuestro-equipo.html" class="btn bg-verde btn-outline-dark btn-lg">Nuestro equipo</a>
             </div>
@@ -114,8 +115,8 @@
         <div class="text-md-end card border-0 card-sobre-nosotros2-responsive flex-md-row-reverse">
             <img src="../assets/sobre-nosotros/mision.jpg" alt class="col-12 col-md-5" style="aspect-ratio: 1/1">
             <div class="card-body d-flex flex-column align-items-md-end">
-                <h5 class="card-title">Nuestra misión</h5>
-                <div class="border-bottom border-5 w-25"></div>
+                <h2 class="card-title">Nuestra misión</h2>
+                <div class="border-bottom border-5 w-25 mt-3 mb-3"></div>
                 <p class="card-text">Tenemos la misión de impactar positivamente al mundo brindando soluciones de marketing de vanguardia a sus marcas y organizaciones mientras construimos la mejor agencia de marketing de desempeño, creando oportunidades de crecimiento para nuestra gente e impulsando resultados comerciales para nuestros clientes.</p>
             </div>
         </div>
@@ -127,7 +128,7 @@
             <div class="card border-0">
                 <img src="../assets/sobre-nosotros/agradecido.svg" class="img-fluid" alt style="aspect-ratio: 1/1">
                 <div>
-                    <h5 class="card-title fw-bold">Agradecido</h5>
+                    <h3 class="card-title mt-4">Agradecido</h3>
                     <p class="card-text">Elijo estar agradecido por este momento porque...</p>
                 </div>
             </div>
@@ -135,7 +136,7 @@
             <div class="card border-0">
                 <img src="../assets/sobre-nosotros/de-dentro-hacia-fuera.svg" class="img-fluid" alt style="aspect-ratio: 1/1">
                 <div>
-                    <h5 class="card-title fw-bold">De adentro hacia afuera</h5>
+                    <h3 class="card-title mt-4">De adentro hacia afuera</h3>
                     <p class="card-text">¿Cuál es la mejor manera de presentarme para servir este momento y a los involucrados?</p>
                 </div>
             </div>
@@ -143,7 +144,7 @@
             <div class="card border-0">
                 <img src="../assets/sobre-nosotros/mentalidad-de-crecimiento.svg" class="img-fluid" alt style="aspect-ratio: 1/1">
                 <div>
-                    <h5 class="card-title fw-bold">Mentalidad de crecimiento</h5>
+                    <h3 class="card-title mt-4">Mentalidad de crecimiento</h3>
                     <p class="card-text">Considero que mis desafíos actuales son una aventura de la cual aprender y crecer.</p>
                 </div>
             </div>
@@ -151,7 +152,7 @@
             <div class="card border-0">
                 <img src="../assets/sobre-nosotros/cariñoso.svg" class="img-fluid" alt style="aspect-ratio: 1/1">
                 <div>
-                    <h5 class="card-title fw-bold">Cariñoso</h5>
+                    <h3 class="card-title mt-4">Cariñoso</h3>
                     <p class="card-text">Hago lo mejor que puedo para ayudar a los demás a sentirse vistos y comprendidos.</p>
                 </div>
             </div>
@@ -159,7 +160,7 @@
             <div class="card border-0">
                 <img src="../assets/sobre-nosotros/ganar.svg" class="img-fluid" alt style="aspect-ratio: 1/1">
                 <div>
-                    <h5 class="card-title fw-bold">Ganar ganar ganar</h5>
+                    <h3 class="card-title mt-4">Ganar ganar ganar</h3>
                     <p class="card-text">Vale la pena tomar la decisión correcta a través de desafíos a corto plazo.</p>
                 </div>
             </div>
