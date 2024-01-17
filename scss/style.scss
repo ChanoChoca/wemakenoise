@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap');
+
+// Base
+@import 'base/_reset.scss';
+
+// Components
+@import 'components/_acordeon.scss';
+@import 'components/_background-img.scss';
+@import 'components/_input-textarea.scss';
+@import 'components/_whatsapp-icon';
+
+// Layout
+@import 'layout/_footer.scss';
+@import 'layout/_header.scss';
+@import 'layout/_header-footer.scss';
+@import 'layout/_media768.scss';
+@import 'layout/_media992.scss';
+@import 'layout/_media1200.scss';
+@import 'layout/_videos.scss';
+
+// Utilities
+@import 'utilities/_bg.scss';
+@import 'utilities/_border.scss';
+@import 'utilities/_mixin.scss';
+@import 'utilities/_variables.scss';

@@ -1,0 +1,5 @@
+@import '../utilities/variables';
+
+video {
+  max-height: $dist-header;
+} // Tamaño recomendado, teniendo en cuenta el header

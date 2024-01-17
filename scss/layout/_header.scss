@@ -1,0 +1,22 @@
+@import '../utilities/mixin';
+
+header {
+  nav {
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
+  } // Efecto con javascript navbar (desktop)
+
+  .navbar-collapse {
+    transition: height 0.5s;
+  } // Efecto con javascript navbar (mobile)
+
+  .navbar-toggler {
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+    .navbar-toggler-icon {
+      @include sizes(67px, 67px);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    } // Icono hamburguer cambiado
+  } // Se elimina el box-shadow por defecto boostrap
+}

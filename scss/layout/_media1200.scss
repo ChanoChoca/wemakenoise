@@ -1,0 +1,11 @@
+@media (min-width: 1200px) {
+
+  .col-xl-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  } // section del html sobre-nosotros
+
+  .card-blog-responsive, .card-nuestro-equipo-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

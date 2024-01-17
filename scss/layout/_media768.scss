@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+
+  .scroll-animate {
+    transform: translateY(100px);
+    transition: transform 1s;
+    &.show {
+      transform: translateY(0);
+    }
+  } // Efecto personalizado javascript
+
+  #miAcordeon1 {
+    .btn-lg {
+      --bs-btn-font-size: 1rem;
+    }
+  }
+
+  .flex-1 > * {
+    flex: 1;
+  } // Divisor de contenedores
+
+  .index-responsive, .card-blog-responsive, .card-nuestro-equipo-responsive {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-sobre-nosotros-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

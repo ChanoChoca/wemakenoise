@@ -33,10 +33,10 @@
     </header>
 
     <main>
-        <a href="https://api.whatsapp.com/send/?phone=5492364533342" target="_blank"><img src="../assets/header-y-footer/whatsapp.svg" alt id="whatsapp"></a>
+        <a href="https://api.whatsapp.com/send/?phone=5492364533342" target="_blank"><img src="../assets/header-y-footer/whatsapp.svg" class="position-fixed z-3" width="64" height="64" id="whatsapp" alt></a>
 
-        <section class="container pt-4 d-xl-flex flex-xl-row justify-content-xl-between">
-            <h1>En el blog</h1>
+        <section class="container pt-5 pb-5 d-xl-flex flex-xl-row justify-content-xl-between">
+            <h1 class="border-start border-5 ps-3">En el blog</h1>
             <div class="d-flex flex-column align-items-center gap-3 flex-lg-row mt-lg-5 mb-lg-5 mt-xl-0 mb-xl-0">
                 <form class="d-flex" role="search" style="width: 288px;">
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -50,11 +50,13 @@
 
         <section class="mt-3">
             <nav aria-label="...">
-                <ul class="pagination d-flex justify-content-center column column-gap-1">
+                <ul class="pagination d-flex justify-content-center column column-gap-1 mb-0">
                     <li class="page-item disabled">
                         <a><img src="../assets/blog/izquierda.svg" alt width="30" height="30"></a>
                     </li>
-                    <li><p class="mb-0 fs-5">Página 1 de X</p></li>
+                    <li>
+                        <p class="mb-0 fs-5">Página <span class="border-bottom border-5">1</span> de X</p>
+                    </li>
                     <li class="page-item">
                         <a href="#"><img src="../assets/blog/derecha.svg" alt width="30" height="30"></a>
                     </li>
@@ -62,7 +64,7 @@
             </nav>
         </section>
 
-        <section class="container mt-5 d-grid gap-5 card-blog-responsive">
+        <section class="container pt-5 pb-5 d-grid gap-5 card-blog-responsive">
             <div class="card">
                 <img src="../assets/blog/evento1.jpg" class="card-img-top" alt>
                 <div class="card-body">
@@ -91,13 +93,15 @@
             </div>
         </section>
 
-        <section class="mt-3">
+        <section class="pb-5">
             <nav aria-label="...">
-                <ul class="pagination d-flex justify-content-center column column-gap-1">
+                <ul class="pagination d-flex justify-content-center column column-gap-1 mb-0">
                     <li class="page-item disabled">
                         <a><img src="../assets/blog/izquierda.svg" alt width="30" height="30"></a>
                     </li>
-                    <li><p class="mb-0 fs-5">Página 1 de X</p></li>
+                    <li>
+                        <p class="mb-0 fs-5">Página <span class="border-bottom border-5">1</span> de X</p>
+                    </li>
                     <li class="page-item">
                         <a href="#"><img src="../assets/blog/derecha.svg" alt width="30" height="30"></a>
                     </li>
@@ -106,7 +110,7 @@
         </section>
     </main>
 
-    <footer class="text-center text-light p-3">
+    <footer class="text-center text-light pt-5 pb-5">
         <div class="container">
             <div><img src="../assets/header-y-footer/logo-footer.svg" alt width="125" height="75"></div>
             <div>

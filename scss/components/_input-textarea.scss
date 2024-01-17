@@ -1,0 +1,8 @@
+@import '../utilities/variables';
+
+input, textarea {
+  &:focus {
+    border-color: $violeta !important;
+    box-shadow: 0 0 0 0.2rem $violeta !important;
+  }
+}

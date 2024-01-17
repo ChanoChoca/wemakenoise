@@ -1,0 +1,44 @@
+@import '../utilities/variables';
+
+#miAcordeon2 {
+  button {
+    border: none;
+    background-color: transparent;
+  } // Botones de la sección "testimonios"
+}
+
+#miAcordeon1, #miAcordeon2 {
+  .collapsing {
+    -webkit-transition: all 0.5s ease !important;
+    -moz-transition: all 0.5s ease !important;
+    -o-transition: all 0.5s ease !important;
+    transition: all 0.5s ease !important;
+  } // Efecto transición en index
+}
+
+.accordion {
+  .accordion-button {
+    background-color: $blanco;
+    transition: 1s ease-in-out;
+    &:focus,
+    &:active,
+    &:not(:focus):not(.collapsed),
+    &.collapsed {
+      border-color: unset;
+      box-shadow: none;
+      color: $negro;
+
+      &:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2385c441' stroke='%2385c441' stroke-width='1.2'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      }
+    }
+
+    &.collapsed {
+      border-color: rgba(132, 196, 64, 0.25) !important;
+    }
+  } // Se cambian los estilos de boostrap, del accordion en nuestro-equipo
+
+  .accordion-collapse img:not(:hover) {
+    filter: grayscale(100%);
+  }
+}

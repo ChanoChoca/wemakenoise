@@ -1,0 +1,19 @@
+@import '../utilities/variables';
+
+header, footer {
+  .btn {
+    background: linear-gradient(90deg, rgba(0,186,195,1) 0%, rgba(133,196,65,1) 35%, rgba(114,71,156,1) 100%) !important;
+    border: 1px solid $negro !important;
+    border-radius: 10px !important;
+    color: $negro !important;
+  }
+
+  .navbar-nav > *, .text-decoration-none {
+    transition: 1s;
+
+    &:hover {
+      background-color: $verde;
+      border-radius: 10px;
+    }
+  } // Para los botones del header y footer
+}
