@@ -39,14 +39,53 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-//movimiento vertical de contenedores
-window.addEventListener('scroll', function() {
-    const elements = document.getElementsByClassName('scroll-animate');
-    Array.from(elements).forEach(function(element) {
-        const position = element.getBoundingClientRect();
+// Crear una función para generar el retardo con stagger
+function calculateStagger(index) {
+    return index * 200;  // Ajusta el valor según sea necesario
+}
 
-        if(position.top >= 0 && position.bottom <= window.innerHeight) {
-            element.classList.add('show');
+// Crear una instancia de Intersection Observer
+let observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        // Si el elemento está en el viewport
+        if (entry.isIntersecting) {
+            // Comprobar la clase del elemento para determinar la animación
+            if (entry.target.classList.contains('animacion-izquierda')) {
+                anime({
+                    targets: entry.target,
+                    translateX: ['-100px', '0px'],
+                    opacity: [0, 1],
+                    easing: 'linear',
+                    delay: calculateStagger(index),  // Utilizar la función de retardo stagger
+                    duration: 500,
+                });
+            } else if (entry.target.classList.contains('animacion-derecha')) {
+                anime({
+                    targets: entry.target,
+                    translateX: ['100px', '0px'],
+                    opacity: [0, 1],
+                    easing: 'linear',
+                    delay: calculateStagger(index),  // Utilizar la función de retardo stagger
+                    duration: 500,
+                });
+            } else if (entry.target.classList.contains('animacion-arriba')) {
+                anime({
+                    targets: entry.target,
+                    translateY: ['-100px', '0px'],
+                    opacity: [0, 1],
+                    easing: 'linear',
+                    delay: calculateStagger(index),  // Utilizar la función de retardo stagger
+                    duration: 500,
+                });
+            }
+            // Desconectar el observer para este elemento
+            // para que la animación no se vuelva a activar
+            observer.unobserve(entry.target);
         }
     });
+});
+
+// Observar cada elemento que queremos animar
+document.querySelectorAll('.animacion-izquierda, .animacion-derecha, .animacion-arriba').forEach(element => {
+    observer.observe(element);
 });

@@ -1,13 +1,5 @@
 @media (min-width: 768px) {
 
-  .scroll-animate {
-    transform: translateY(100px);
-    transition: transform 1s;
-    &.show {
-      transform: translateY(0);
-    }
-  } // Efecto personalizado javascript
-
   #miAcordeon1 {
     .btn-lg {
       --bs-btn-font-size: 1rem;

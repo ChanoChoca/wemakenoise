@@ -6,13 +6,12 @@
     <title>WeMakeNoise | Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a href="#">
                     <img src="../assets/header-y-footer/logo-header.svg" alt width="125" height="75">
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +34,7 @@
     <main>
         <a href="https://api.whatsapp.com/send/?phone=5492364533342" target="_blank"><img src="../assets/header-y-footer/whatsapp.svg" class="position-fixed z-3" width="64" height="64" id="whatsapp" alt></a>
 
-        <section class="container pt-5 pb-5 d-xl-flex flex-xl-row justify-content-xl-between">
+        <section class="container pt-5 pb-5 d-xl-flex flex-xl-row justify-content-xl-between animacion-izquierda">
             <h1 class="border-start border-5 ps-3">En el blog</h1>
             <div class="d-flex flex-column align-items-center gap-3 flex-lg-row mt-lg-5 mb-lg-5 mt-xl-0 mb-xl-0">
                 <form class="d-flex" role="search" style="width: 288px;">
@@ -64,7 +63,7 @@
             </nav>
         </section>
 
-        <section class="container pt-5 pb-5 d-grid gap-5 card-blog-responsive">
+        <section class="container pt-5 pb-5 d-grid gap-5 card-blog-responsive animacion-arriba">
             <div class="card">
                 <img src="../assets/blog/evento1.jpg" class="card-img-top" alt>
                 <div class="card-body">
@@ -137,6 +136,8 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

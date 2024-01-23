@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
 body {
-  padding-top: 101px;
+  padding-top: 83px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -63,6 +63,7 @@ footer {
 
 header nav {
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
+  width: 100vw;
 }
 header .navbar-collapse {
   transition: height 0.5s;
@@ -91,13 +92,6 @@ header .navbar-nav > *:hover, header .text-decoration-none:hover, footer .navbar
 }
 
 @media (min-width: 768px) {
-  .scroll-animate {
-    transform: translateY(100px);
-    transition: transform 1s;
-  }
-  .scroll-animate.show {
-    transform: translateY(0);
-  }
   #miAcordeon1 .btn-lg {
     --bs-btn-font-size: 1rem;
   }

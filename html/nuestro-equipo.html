@@ -6,13 +6,12 @@
     <title>WeMakeNoise | Nuestro equipo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a href="#">
                     <img src="../assets/header-y-footer/logo-header.svg" alt="" width="125" height="75">
                 </a>
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +41,7 @@
 
         <section class="mb-4 mt-4">
             <div class="accordion accordion-flush d-lg-flex row m-0 overflow-auto" id="accordionFlushExample">
-                <div class="accordion-item pt-lg-5 ps-lg-5 pe-lg-5 border-0 col-lg-4 col-xl-3">
+                <div class="accordion-item pt-lg-5 ps-lg-5 pe-lg-5 border-0 col-lg-4 col-xl-3 animacion-izquierda">
                     <h2 class="accordion-header">
                         <button class="accordion-button border-start border-5 ps-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
                             Especialista 1
@@ -59,7 +58,7 @@
                         </button>
                     </h2>
                 </div>
-                <div class="col-lg-8 col-xl-9 p-lg-0">
+                <div class="col-lg-8 col-xl-9 p-lg-0 animacion-derecha">
                     <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
                         <div class="d-grid gap-3 card-nuestro-equipo-responsive">
                             <div class="card border-0">
@@ -130,7 +129,8 @@
             <p class="mb-0">© 2023 WeMakeNoise</p>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+    <script src="../js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
