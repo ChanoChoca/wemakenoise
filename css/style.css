@@ -2,6 +2,8 @@
 body {
   padding-top: 83px;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 #miAcordeon2 button {

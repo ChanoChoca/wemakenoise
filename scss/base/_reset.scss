@@ -1,4 +1,6 @@
 body {
   padding-top: 83px;
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 } // Para que el header no ocupe espacio del contenido que le sigue
