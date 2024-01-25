@@ -6,7 +6,7 @@ window.onscroll = function () {
     const navbarButton = document.querySelector(".navbar-toggler");
 
     if (currentScrollPos > prevScrollpos) {
-        document.querySelector(".navbar").style.top = "-101px";
+        document.querySelector(".navbar").style.top = "-91px";
         if (navbarButton.getAttribute("aria-expanded") === "true") {
             document.querySelector(".navbar").style.top = "0";
         }

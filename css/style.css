@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap");
 body {
-  padding-top: 83px;
+  padding-top: 91px;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -46,7 +46,7 @@ body {
 
 .background-image-nuestro-equipo {
   background-image: url("../../assets/nuestro-equipo/equipo.jpg");
-  height: calc(100vh - 101px);
+  height: calc(100vh - 91px);
 }
 
 input:focus, textarea:focus {
@@ -126,7 +126,7 @@ header .navbar-nav > *:hover, header .text-decoration-none:hover, footer .navbar
 }
 
 video {
-  max-height: calc(100vh - 101px);
+  max-height: calc(100vh - 91px);
 }
 
 .bg-verde {
