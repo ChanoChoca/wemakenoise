@@ -1,7 +1,7 @@
 @import '../utilities/variables';
 
 .background-image-index {
-  background-image: linear-gradient(rgba(0, 0, 255, 0), #{$marron}), url("assets/index/principios-basicos.jpg");
+  background-image: linear-gradient(rgba(0, 0, 255, 0), #{$marron}), url("../assets/index/principios-basicos.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,6 +9,6 @@
 
 .background-image-nuestro-equipo {
   @extend .background-image-index;
-  background-image: url("assets/nuestro-equipo/equipo.jpg");
+  background-image: url("../assets/nuestro-equipo/equipo.jpg");
   height: $dist-header
 } // Imagen de la section nuestro-equipo
