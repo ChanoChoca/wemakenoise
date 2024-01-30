@@ -52,14 +52,14 @@ h5, h6, p, a, button, input, textarea, label {
 }
 
 .background-image-index, .background-image-nuestro-equipo {
-  background-image: linear-gradient(rgba(0, 0, 255, 0), #231f20), url("../../assets/index/principios-basicos.jpg");
+  background-image: linear-gradient(rgba(0, 0, 255, 0), #231f20), url("../assets/index/principios-basicos.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .background-image-nuestro-equipo {
-  background-image: url("../../assets/nuestro-equipo/equipo.jpg");
+  background-image: url("../assets/nuestro-equipo/equipo.jpg");
   height: calc(100vh - 91px);
 }
 
