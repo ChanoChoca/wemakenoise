@@ -94,7 +94,7 @@ header .navbar-toggler .navbar-toggler-icon {
 }
 
 header .btn, footer .btn {
-  background: linear-gradient(90deg, rgb(0, 186, 195) 0%, rgb(133, 196, 65) 35%, rgb(114, 71, 156) 100%) !important;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(133, 196, 64) 35%);
   border: 1px solid #000000 !important;
   border-radius: 10px !important;
   color: #000000 !important;
