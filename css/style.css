@@ -5,21 +5,6 @@ body {
   overflow-y: scroll;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-
-h2, h3, h4 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-h5, h6, p, a, button, input, textarea, label {
-  font-family: "Montserrat", sans-serif !important;
-  font-weight: 300 !important;
-}
-
 #miAcordeon2 button {
   border: none;
   background-color: transparent;
